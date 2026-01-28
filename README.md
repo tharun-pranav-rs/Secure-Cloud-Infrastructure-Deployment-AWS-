@@ -36,9 +36,9 @@ graph LR
     classDef security fill:#f00,color:white,stroke-width:2px;
     SSH[SSH Access] -- Port 22 (My IP Only) --> SG
     style SSH fill:#f9f,stroke:#333,stroke-width:4px
+```
 
-
-🔒 Security Controls Implemented
+## 🔒 Security Controls Implemented
 1. Perimeter Defense (Network Security)
 Least Privilege Firewalling: The AWS Security Group is configured to deny all non-essential traffic.
 SSH Hardening: SSH (Port 22) is restricted strictly to a Single Static IP (/32 CIDR). This renders Brute Force attacks mathematically impossible from the open internet.
@@ -77,7 +77,7 @@ aws ec2 authorize-security-group-ingress \
     --cidr 106.51.x.x/32
 
 👨‍💻 About Me
-Tharun Pranav RS Aeronautical Engineer | CompTIA Security+ Certified
+Tharun Pranav RS | Aeronautical Engineer | CompTIA Security+ Certified
 
 Transitioning from Aeronautical Engineering to Cybersecurity, I build cloud systems with the same rigor used in flight safety protocols.
    
