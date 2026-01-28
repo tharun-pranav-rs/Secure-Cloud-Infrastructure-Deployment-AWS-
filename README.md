@@ -61,15 +61,15 @@ Tools: Bash, SSH, Systemd
 🚀 How to Deploy (Reproduction Steps)
 
 1. Launch Instance
-# Update repositories to ensure patch compliance
-sudo apt update && sudo apt upgrade -y
+ Update repositories to ensure patch compliance
+ sudo apt update && sudo apt upgrade -y
 
 2. Install Web Server
 sudo apt install nginx -y
 sudo systemctl enable nginx
 
 3. Secure the Firewall (AWS CLI Example)
-# Example logic for restricting SSH
+Example logic for restricting SSH
 aws ec2 authorize-security-group-ingress \
     --group-id sg-12345 \
     --protocol tcp \
